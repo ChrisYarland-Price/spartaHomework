@@ -7,4 +7,40 @@ light blue: #1c5380
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  background-image: url("../images/bgtile.png");
+  background-position: left top;
+  background-repeat: repeat-x; 
+}
+header h1 {
+	font-family: "Billabong";
+}
+body.pic{
+	display: inline-block;
+}
+body header{
+
+}
+body main{
+	border: 2px solid red;
+	box-sizing: border-box;
+}
+
+body main section h2{
+
+}
+body main section.desc{
+	display: inline-block;
+	border: 2px solid blue;
+	box-sizing: border-box;
+}
+
+body main section.apps{
+
+	border: 2px solid black;
+	box-sizing: border-box;
+}
+body footer {
+	border: 2px solid black;
+	box-sizing: border-box;
+
 }
