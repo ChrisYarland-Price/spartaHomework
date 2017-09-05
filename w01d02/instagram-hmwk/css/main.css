@@ -17,8 +17,16 @@ header{
 	float: right;
 
 }
-header h1 {
+body section header h1 {
 	font-family: "Billabong";
+}
+body section header a{
+	font-size: 2em;
+	color: white;
+	border-radius: 5px;
+	background-color: #1c5380;
+	display: inline-block;
+	margin: 20px;
 }
 body .pic{
 	display: inline-block;
@@ -27,19 +35,12 @@ body .pic{
 body header{
 	display: inline-block;
 }
-body main{
+body section.move{
 	float: right;
 	width: 60%;
 	margin-top: 10%;
 	margin-right: 2%; 
 
-}
-body main section.logIn{
-	border-radius: 5px;
-	background-color: #1c5380;
-	display: inline-block;
-	margin: 10px;
-	
 }
 
 body main section h2{
@@ -47,15 +48,11 @@ body main section h2{
 }
 body main section.desc{
 	display: inline-block;
-	background: white; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(white, #fafafa); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(white, #fafafa); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(white, #fafafa); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(white, #fafafa); /* Standard syntax */
-    /*background-color: white;
-	background: linear-gradient;*/
+	background-image: url("../images/frame.png");
+	background-size:100%; 
+	background-repeat: no-repeat;
 	border-radius: 5px;
-	padding: 1%;
+	padding: 3%;
 }
 
 body main section.apps{
@@ -63,5 +60,18 @@ body main section.apps{
 
 }
 body footer {
+	text-align: center;
+	display: inline-block;
+	width: 100%;		
+	color: #06365f;
+}
+body footer ul{
+	display: inline;
+	list-style-type: none;
+	text-align: center;
+	color: #06365f;
+}
+body footer ul li {
+	display: inline-block;	
 	text-align: center;
 }
