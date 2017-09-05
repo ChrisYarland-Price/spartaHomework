@@ -10,19 +10,36 @@ body {
   background-image: url("../images/bgtile.png");
   background-position: left top;
   background-repeat: repeat-x; 
+  background-color: #fafafa;	
+}
+
+header{
+	float: right;
+
 }
 header h1 {
 	font-family: "Billabong";
 }
-body.pic{
+body .pic{
 	display: inline-block;
+	margin-top: 5%;
 }
 body header{
-
+	display: inline-block;
 }
 body main{
-	border: 2px solid red;
-	box-sizing: border-box;
+	float: right;
+	width: 60%;
+	margin-top: 10%;
+	margin-right: 2%; 
+
+}
+body main section.logIn{
+	border-radius: 5px;
+	background-color: #1c5380;
+	display: inline-block;
+	margin: 10px;
+	
 }
 
 body main section h2{
@@ -30,17 +47,21 @@ body main section h2{
 }
 body main section.desc{
 	display: inline-block;
-	border: 2px solid blue;
-	box-sizing: border-box;
+	background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, #fafafa); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #fafafa); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #fafafa); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #fafafa); /* Standard syntax */
+    /*background-color: white;
+	background: linear-gradient;*/
+	border-radius: 5px;
+	padding: 1%;
 }
 
 body main section.apps{
+	margin: 5%;
 
-	border: 2px solid black;
-	box-sizing: border-box;
 }
 body footer {
-	border: 2px solid black;
-	box-sizing: border-box;
-
+	text-align: center;
 }
