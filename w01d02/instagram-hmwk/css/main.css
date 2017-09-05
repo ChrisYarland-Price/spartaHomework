@@ -74,4 +74,13 @@ body footer ul{
 body footer ul li {
 	display: inline-block;	
 	text-align: center;
+	margin: 0px 15px;
+}
+body footer span{
+	color: grey;
+	font-size: 0.7em;
+}
+a{
+
+	text-decoration: none;
 }
