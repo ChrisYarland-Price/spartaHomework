@@ -14,11 +14,12 @@ body {
 }
 
 header{
-	float: right;
-
+	float: left;
+	width: 100%;
 }
-body section header h1 {
-	font-family: "Billabong";
+body section header img {
+	float: left;
+	width: 50%;
 }
 body section header a{
 	font-size: 2em;
@@ -27,19 +28,26 @@ body section header a{
 	background-color: #1c5380;
 	display: inline-block;
 	margin: 20px;
+	width: 20%;
+	float: right;
+	text-align: center;
+}
+body section header a img{
+	width: 25%;
+	margin: 7.5px;
 }
 body .pic{
 	display: inline-block;
-	margin-top: 5%;
+	margin: 8% 0px 0px 10%;
 }
 body header{
 	display: inline-block;
 }
 body section.move{
 	float: right;
-	width: 60%;
+	width: 50%;
 	margin-top: 10%;
-	margin-right: 2%; 
+	margin-right: 10%; 
 
 }
 
