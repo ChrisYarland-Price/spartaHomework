@@ -10,7 +10,6 @@ body {
   background-image: url("../images/bgtile.png");
   background-position: left top;
   background-repeat: repeat-x; 
-  background-color: #fafafa;	
 }
 
 header{
@@ -52,7 +51,7 @@ body section.move{
 }
 
 body main section h2{
-
+	color: #06365f;
 }
 body main section.desc{
 	display: inline-block;
@@ -60,11 +59,11 @@ body main section.desc{
 	background-size:100%; 
 	background-repeat: no-repeat;
 	border-radius: 5px;
-	padding: 3%;
+	padding: 10%;
 }
 
 body main section.apps{
-	margin: 5%;
+	margin-top: 5%;
 
 }
 body footer {
@@ -72,6 +71,7 @@ body footer {
 	display: inline-block;
 	width: 100%;		
 	color: #06365f;
+	font-weight: bold; 
 }
 body footer ul{
 	display: inline;
