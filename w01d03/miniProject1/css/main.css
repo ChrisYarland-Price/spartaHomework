@@ -1,10 +1,40 @@
 body{
-
+	background-color: #D2D2D2 ;
 }
-
-.nav{
+footer{
+	background-color: #FF7C0A ;
+	width: 100vw;
+	height: 40px;
+}
+.blogPics img{
+	width: 100%;	
+}
+header .nav{
 	display:none;
 }
+.aboutMe{
+	background-color: ;
+
+}
+.jumbotron{
+	padding: 2.5%;
+}
+.jumbotron img{
+	border-radius: 50%;
+	size: 0.5em;
+	height: 10%;
+	width: 30%;
+	float: right;
+	margin: 3%;
+}
+
+.orange{
+	color: #ff7c0a;
+}
+
+.grey{
+    background-color: #eceeef
+}
 
 
 
@@ -18,42 +48,32 @@ body{
 
 
 
-
-
-
-
-
-
-@media screen and (min-width: 480px){
+@media screen and (min-width: 600px){
 	body{
 
 	}
-	.nav {
+	.jumbotron .nav {
 		display:flex;
 		margin: 10% auto;
-
+	}
+	.nav{
+		display: flex;
 	}
 	header{
 		width: 30%;
-		height: 100vw;
-		background-attachment: scroll,	fixed;
-		background-size: auto, auto 100%;
-		float: left;
+		/*height: 100vw;*/
 	}
+
 	.hideOnPc{
 		display: none;
 	}
-	.writingPics{
-	float: right;
 
-	}
-	.writingData{
-		
-	}
 	.jumbotron{
-		height: 100%;
-		background-attachment: scroll,	fixed;
-		background-size: auto, auto 100%;
-		float: left;
+		/*height: 100%;*/
+		width: 30.33% ;
+		position: fixed;
+	}
+	ul{
+		display: none;
 	}
 }
