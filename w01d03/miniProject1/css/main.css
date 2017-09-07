@@ -1,0 +1,59 @@
+body{
+
+}
+
+.nav{
+	display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 480px){
+	body{
+
+	}
+	.nav {
+		display:flex;
+		margin: 10% auto;
+
+	}
+	header{
+		width: 30%;
+		height: 100vw;
+		background-attachment: scroll,	fixed;
+		background-size: auto, auto 100%;
+		float: left;
+	}
+	.hideOnPc{
+		display: none;
+	}
+	.writingPics{
+	float: right;
+
+	}
+	.writingData{
+		
+	}
+	.jumbotron{
+		height: 100%;
+		background-attachment: scroll,	fixed;
+		background-size: auto, auto 100%;
+		float: left;
+	}
+}
