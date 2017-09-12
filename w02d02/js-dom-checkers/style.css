@@ -1,0 +1,38 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: aquamarine;
+	font-family: Helvetica;
+}
+
+h1 {
+	font-size: 64px;
+	text-align: center;
+}
+
+ul.board {
+	margin: 100px auto;
+	border: 2px solid black;
+	width: 400px;
+	height: 400px;
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	width: 12.5%;
+	height: 12.5%;
+	border: 1px solid black;
+	box-sizing: border-box;
+	list-style-type: none;
+	float: left;
+	display: inline-block;
+}
+
+.white {
+	background-color: white;
+}
+
+.black {
+	background-color: black;
+}

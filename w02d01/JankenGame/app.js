@@ -7,7 +7,7 @@ console.log(decis[comp])
 while(quit != "N"){
 	while(winCount != 10 && compWin != 10){
 		var player1 = (prompt("Please enter your choice: (R)ock, (P)aper, (S)cissors")).toUpperCase();
-		var comp = Math.floor(Math.random() * (4 - 1) );
+		var comp = Math.floor(Math.random() * 3 );
 		// alert(decis[comp] + " is the computer Choice");
 
 		switch (player1){
