@@ -56,6 +56,9 @@ header .nav{
 		display:flex;
 		margin: 10% auto;
 	}
+	.active{
+		background-color: #ff7c0a;
+	}
 	.nav{
 		display: flex;
 	}
