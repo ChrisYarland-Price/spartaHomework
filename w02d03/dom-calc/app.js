@@ -1,55 +1,59 @@
 document.addEventListener("DOMContentLoaded", function(argument) {
-	var firstButton = document.getElementsByTagName('button');
+	var button = document.getElementsByTagName('button');
 	var display = document.getElementById("display");
-	var val, val1, operator;
-	var val2= "";
-	var checkOperator = ["+","-","*","/"];
+	var val, val1, operator, val2;
+	var checksymbol =["=","+","-","/","*"]
+	var runOnce = false;
 
+	for (var i = 0; i < button.length; i++) {
+		button[i].addEventListener("click", function(){	
+			 if(this.value === "C"){
+				reset();
+			} else if(!val1){
+				val1 = this.value;	
+				display.innerHTML = val1;
+			}else if (!operator && this.value != "=") {
+				operator = this.value;
+				if(parseInt(operator || operator == 0)){
+					val1 = concat(operator, val1);
+					operator = "";
+				}	else{
+					display.innerHTML = operator;
+				}		
+			}else if (this.value == "=") {
 
-	for (var i = 0; i < firstButton.length; i++) {
-		firstButton[i].addEventListener("click", function(){
-			if(this.value !== "C"){
-				if(val1){
-					if (operator) {
-						val = this.value;
-						if (parseInt(val) || val === "0") {
-							val2 = val2.concat(val);
-							display.innerHTML = val2
-							val = ""
-						}else{
-							if (val == "=") {
-								run(val1, operator, val2);
-							}
-						}
-
-					}else{
-						operator = display.innerHTML = this.value;
-						console.log(operator)
-						
-						if (parseInt(operator) || operator === "0") {
-							val1 = val1.concat(operator);
-							display.innerHTML = val1
-							operator = ""
-						}
-					}
+			} else if (!val2){
+				val2 = display.innerHTML =this.value;
+			}else{
+				val = this.value;
+				if(checksymbol.indexOf(val) == -1){
+						val2 = concat(val, val2)
+						val = ""
+				}else if (checksymbol.indexOf(this.value)!= -1 && runOnce === true){
+				val1 = answer;
+				operator = operator2;
 				}else{
-					val1 = this.value;	
-					display.innerHTML = val1;
+					operator2 = operator;
+					run(val1, operator, val2);
 				}
-				
-
-			} else{
-				val1 = "";
-				val2 = "";
-				operator = "";
-				display.innerHTML = "";
 			}
+			
 		});
 	}
 
-});
 
-
+function reset() {
+	val1 = "";
+	val2 = "";
+	operator = "";
+	display.innerHTML = "";
+	val = "";	
+}
+function concat(str, ret) {
+	ret = ret.concat(str);
+	display.innerHTML = ret
+	return ret;	
+}
 
 function run(x, oper, y){
 var answer;
@@ -66,8 +70,11 @@ var answer;
 		case '/':
 			answer = divi(x,y);
       break;
-	}
+	}		
+	reset();
+	debugger;
 	display.innerHTML = answer;	
+	runOnce = true;
 }
 function add(arg, arg2) {
     return arg + arg2;
@@ -80,4 +87,7 @@ function multi(arg, arg2) {
 }
 function divi(arg, arg2) {
     return arg / arg2;
-}
+}	
+});
+
+

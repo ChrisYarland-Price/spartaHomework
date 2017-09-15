@@ -1,0 +1,30 @@
+body{
+	width: 100vw;
+	height: 100vh;
+	background-color: orange;
+}
+
+ul{
+	list-style-type: none;
+	width: 300px;
+	height: 300px;
+	margin: 50px auto;
+	border: 2px solid black;
+	padding: 0;
+}
+
+li{
+	box-sizing: border-box;
+	height: 100px;
+	width: 100px;
+	display: inline;
+	float: left;
+	border: 1px solid grey;
+	list-style-type: none;
+}
+.cross{
+	background-color: grey;
+}
+.circle{
+	background-color: blue;
+}
