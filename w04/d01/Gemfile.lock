@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ruby-measurement (1.2.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ruby-measurement
+
+BUNDLED WITH
+   1.15.4
