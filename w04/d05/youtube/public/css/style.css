@@ -1,0 +1,50 @@
+body {
+	height: 100vh;
+	width: 99vw;
+	background-color: black;
+	color: white;
+	margin: 10px;
+
+}
+.videos{
+	float: left;
+	width: 47%;
+	margin:10px;
+}
+header{
+	/*margin: 10px;*/
+}
+/*nav{
+	mar
+}*/
+header a{
+	color: white;
+	text-decoration: none;	
+
+}
+main{
+	padding:10px;
+	height: 2000px;
+}
+p{
+	word-wrap: break-word;
+}
+form{
+	height: 80%;
+	width: 90%;
+	text-align: center;
+	margin: 10px
+}
+nav{
+	background-color: black;
+	color: white;
+}
+.delete{
+	text-align: left;
+	height: ;
+	width: ;
+}
+.edit{
+	margin-left: 13px
+
+}

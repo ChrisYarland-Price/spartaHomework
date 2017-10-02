@@ -1,0 +1,22 @@
+  <form action="/<%= @video.id %>" method="POST">
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" name="title" class="form-control" placeholder="Enter a title" value="<%= @video.title %>">
+  </div>
+
+  <div class="form-group">
+    <label>Body</label>
+    <textarea class="form-control" name="description"><%= @video.description %></textarea>
+  </div>
+  <div class="form-group">
+    <label>Emmbedded Video </label>
+    <input type="text" name="url" class="form-control" placeholder="Enter an Emmbedded video link" value='<%= @video.url %>'>
+  </div>
+
+  <div class="form-group">
+    <input type="submit" value="Save Post">
+  </div>
+  <% if(@video.id) %>
+    <input type="hidden" name="_method" value="PUT">
+  <% end %>
+</form>

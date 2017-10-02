@@ -1,0 +1,11 @@
+<% @videos.each do |video| %>
+<div class="videos">
+  <h3>
+  	<a href="/<%= video.id %>"><%= video.title %></a>
+  </h3>
+  <div>
+  	<iframe width="560" height="315" src="<%= video.url%>" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <p><%= video.description %></p>
+</div>
+<% end %>
