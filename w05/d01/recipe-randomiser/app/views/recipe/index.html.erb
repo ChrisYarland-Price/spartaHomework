@@ -1,0 +1,19 @@
+<h1>All Recipes</h1>
+
+<%= @recipes.each do |recipe|%>
+<div class="recipes">
+  <h3>
+    <a href="/recipe/<%= recipe.id %>"><%= recipe.title %></a>
+  </h3>
+  <% if(recipe.video) %>
+  <div>
+      <iframe width="560" height="315" src="<%= recipe.video%>" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <% else %>
+    <div>
+      <img src="<%= recipe.image %>">
+    </div>
+  <% end %>
+  <p><%= recipe.description %></p>
+</div>
+<% end %>
