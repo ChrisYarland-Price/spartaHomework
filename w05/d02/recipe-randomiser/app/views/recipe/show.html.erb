@@ -1,0 +1,29 @@
+<h1><%= @recipe.title %></h1>
+<p><%= @recipe.duration %></p>
+<% if(@recipe.video) %>
+		<%= video_tag @recipe.video %>
+	<% elsif @recipe.image %>
+		<div>
+			<%= image_tag @recipe.image %>
+		</div>
+<% else %>
+
+<% end %>
+<table>
+	<tr>
+		<th>Ingredient List</th>
+	</tr>
+<% @recipe.items.all.each do |item| %>
+		<tr>
+			<td><%= "#{item.amount} #{item.name}"  %></td>
+		</tr>
+<% end %>
+	</table>
+<p><%= @recipe.description %></p>
+<p><%= @recipe.steps %></p>
+<a class="edit" href="/recipe/<%= @recipe.id %>/edit">edit</a>
+
+<form class="delete" action="/recipe/<%= @recipe.id %>" method="POST">
+<input type="hidden" name="_method" value="DELETE">
+<input type="submit" value="Delete">
+</form> 

@@ -1,0 +1,50 @@
+<%= form_with(model: recipe, local: true) do |form| %>
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :title, value: recipe.title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :duration %>
+    <%= form.text_field :duration, id: :duration, value: recipe.duration %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description, id: :description, value: recipe.description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :steps %>
+    <%= form.text_field :steps, id: :steps, value: recipe.steps %>
+  </div>
+
+  <div class="field">
+    <%= form.label :url %>
+    <%= form.text_field :url, id: :url, value: recipe.url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :video_URL %>
+    <%= form.text_field :video, id: :video, value: recipe.video%>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.text_field :image, id: :image, value: recipe.image %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ingredients %>
+
+     		<%= form.collection_check_boxes :item_ids, Item.all, :id, :name %>
+
+  </div>
+      <div>
+     
+    </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
