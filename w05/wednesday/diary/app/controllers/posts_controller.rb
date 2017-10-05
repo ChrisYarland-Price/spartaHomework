@@ -4,6 +4,7 @@ class PostsController < ApplicationController
 
   # GET users/1/posts
   def index
+    @user = current_user.id
     @posts = @user.posts
   end
 
